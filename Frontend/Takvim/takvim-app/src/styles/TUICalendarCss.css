@@ -1,0 +1,125 @@
+/* Genel Dashboard Tasarımı */
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #343a40;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+/* Sayfa Üst Başlık */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.page-header .btn {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.page-header .btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.page-header .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.page-header .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.page-header .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Ay Görünümü - TUI Calendar */
+div[role="grid"] {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tui-full-calendar-timegrid-container {
+  background-color: white;
+}
+
+.tui-full-calendar-timegrid-hour-marker {
+  color: #999;
+  font-size: 12px;
+}
+
+.tui-full-calendar-month-title {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.tui-full-calendar-weekday-grid {
+  background-color: #f7f9fc;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.tui-full-calendar-weekday-name {
+  color: #495057;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.tui-full-calendar-weekday-grid .tui-full-calendar-day {
+  border: 1px solid #e9ecef;
+}
+
+/* Olay Görünümü */
+.tui-full-calendar-schedule {
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+.tui-full-calendar-schedule:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Renk Efsanesi */
+.legend {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.legend-item {
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+}

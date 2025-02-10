@@ -1,0 +1,231 @@
+:root {
+    --color-background: rgba(0, 0, 0, 0.7); /* Arka plan siyah tonlarında */
+    --color-primary: rgba(255, 255, 255, 0.8); /* Beyaz saydam ton */
+    --color-secondary: rgba(200, 200, 200, 0.9); /* Gri ton */
+    --color-shadow: rgba(0, 0, 0, 0.5); /* Daha koyu gölge */
+    --color-rings: rgba(255, 255, 255, 0.5); /* Yüzükler için açık gri */
+  }
+  
+  body {
+    padding-top: 5vh;
+    background: url('../assets/images/loginBG.jpg') no-repeat center center fixed; /* Arka plan resmi */
+    background-size: cover; /* Resim tüm ekranı kaplar */
+    font-family: 'Roboto', sans-serif; /* Yazı tipi */
+    color: white; /* Varsayılan metin rengi */
+  }
+  
+  .calendar {
+    position: relative;
+    margin: auto;
+    width: 70vw;
+    height: 70vw;
+   /* backdrop-filter: blur(20px); /* Daha belirgin bulanıklık efekti */
+   /* background-color: rgba(255, 255, 255, 0.1); /* Saydam beyaz arka plan */
+    border-radius: 10px; /* Hafif yuvarlatma */
+  /*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Gölgeli görünüm */
+  }
+  
+  .base {
+    width: 70%;
+    height: 45%;
+    border-radius: 2vw;
+    box-shadow: 0 0.5vw 1vw 0 var(--color-shadow);
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .base.top {
+    backdrop-filter: blur(5px);
+    top: 5%;
+    left: 15%;
+   /* background-color: var(--color-primary); *//* Üst kısmın beyaz tonları */
+  }
+  
+  .base.top .holes {
+    position: absolute;
+    top: 88%;
+    left: 4%;
+  }
+  
+  .base.bottom {
+    top: 51%;
+    left: 15%;
+    backdrop-filter: blur(10px);
+   /* background-color: rgba(255, 255, 255, 0.5); /* Alt kısmın daha açık beyaz tonları */
+  }
+  
+  .base.bottom .holes {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+  }
+  
+  .base.bottom::before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 28%;
+   /* background-color: var(--color-primary);*/
+  }
+  
+  .holes {
+    width: calc((45 / 0.7) * 2%);
+    height: 200%;
+  }
+  
+  .holes .hole {
+    /*background-color: rgba(255, 255, 255, 0.3); /* Daha açık ton */
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 3.8vw;
+    box-shadow: inset 0.2vw 0.2vw 1vw 0 var(--color-shadow);
+  
+  }
+  
+  .rings {
+    width: 70%;
+    height: 10%;
+    position: absolute;
+    top: 45.5%;
+    left: 17.3%;
+  }
+  
+  .rings .ring {
+    width: 3.5%;
+    height: 100%;
+    display: inline-block;
+    backdrop-filter: blur(10px);
+    /*background-color: var(--color-rings);*/
+    margin-left: 4.6vw;
+    border-radius: 70% / 10%;
+    box-shadow: 0.3vw 0 0.5vw -0.2vw var(--color-shadow);
+  }
+  
+  .year-side {
+   /* backdrop-filter: blur(50px);*/
+   /* background-color: var(--color-secondary);*/
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .year-side::after {
+    content: '2024';
+    display: block;
+    color: var(--color-rings);
+    /*color: var(--color-primary);*/
+    font-family: Roboto, sans-serif;
+    font-size: 7vw;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 35%;
+    left: -30%;
+  }
+  
+  .month-side {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-shadow);
+    border-radius: 2vw;
+    padding: 1rem;
+    box-shadow: inset 0.2vw 0.2vw 1vw 0 var(--color-shadow);
+  }
+
+  /*Hata Mesajları*/
+  .error-message{
+    margin-top: 0.5rem;
+    color: red;
+  }
+  
+
+  .login-form {
+    margin: 5%;
+   /* backdrop-filter: blur(500px);*/
+    width: 80%;
+    max-width: 300px;
+    background-color: var(--color-shadow); /* Form için saydam arka plan */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-left: 7rem;
+    margin-bottom: 5rem;
+    box-shadow: inset 0.5vw 0.5vw 1vw 0 var(--color-shadow);
+  }
+  
+  .login-form h2 {
+    margin-bottom: 1rem;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+  }
+  
+  .input-group input {
+    margin:auto;
+    margin-bottom: 0.5rem;
+    width: 75%;
+    padding: 0.8rem;
+    border: 1px solid var(--color-shadow);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color:whitesmoke;
+    background: var(--color-shadow);
+    outline: none;
+  }
+  
+  .input-group input:focus {
+    border-color: rgba(200, 200, 200, 0.8);
+    box-shadow: 0 0 0.2rem rgba(200, 200, 200, 0.8);
+  }
+  
+  button {
+    width: 40%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: var(--color-secondary);
+    color: #000;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    color: whitesmoke;
+    background-color: var(--color-shadow);;
+  }
+  
+  .days {
+    width: 90%;
+    height: 75%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(7, 1fr);
+    grid-gap: 0.2vw;
+  }
+  
+  .days > div {
+    text-align: center;
+    padding-top: 20%;
+    font-family: Roboto, sans-serif;
+    font-size: 1.8vw;
+    color: var(--color-primary);
+  }
+  
+  .days > div.old {
+    color: rgba(200, 200, 200, 0.7);
+  }
+  
+  .days > div.weekday {
+    font-weight: bold;
+    color: var(--color-secondary);
+  }
+  

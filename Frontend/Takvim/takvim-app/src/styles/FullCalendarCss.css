@@ -1,0 +1,220 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.full-calendar-page {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #343a40;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-bottom: 1px solid #495057;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #495057;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.calendar-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.calendar-header .form-select {
+  margin-right: 10px;
+}
+/*Takvim oluştur seç  */
+.calendar-header .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.calendar-header .btn-secondary:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.color-picker-container {
+  display: flex;
+  gap: 10px;
+ /* margin-bottom: 20px;*/
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+}
+
+.modal {
+  z-index: 1050;
+}
+
+.modal-dialog {
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+@media (max-width: 768px) {
+  .full-calendar-page {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .calendar-container {
+    width: 100%;
+  }
+} 
+
+
+/* Ay başlık kısmı */
+.fc-toolbar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black; /* Başlık rengi */
+  text-transform: uppercase;
+}
+
+
+
+/* Özel renkler */
+.fc-event.bg-primary {
+  background-color: #007bff !important; /* Mavi */
+  color: black !important;
+}
+
+.fc-event.bg-success {
+  background-color: #28a745 !important; /* Yeşil */
+  color: black !important;
+}
+
+.fc-event.bg-danger {
+  background-color: #dc3545 !important; /* Kırmızı */
+  color: black !important;
+}
+
+.fc-event.bg-warning {
+  background-color: #ffc107 !important; /* Sarı */
+  color: black !important;
+}
+
+
+.fc-event.bg-info {
+  color: black !important;
+}
+
+
+.calendar-title{
+  text-align: center;
+}
+
+
+/*Takvim seç veya oluştur yeni olay ekle butonları*/
+/* Buton Konteyneri */
+.button-container {
+  display: flex; /* Yan yana yerleşim */
+  justify-content: center; /* Ortalamak için */
+  align-items: center; /* Dikey hizalama */
+  gap: 20px; /* Butonlar arası boşluk */
+ /* margin-top: 20px; /* Üstten boşluk */
+}
+
+/* Genel Buton Stili */
+.button-container button {
+  padding: 15px 30px; /* Buton boyutları */
+  font-size: 18px; /* Yazı boyutu */
+  font-weight: bold; /* Yazı kalınlığı */
+  border-radius: 8px; /* Köşe yuvarlama */
+  border: none; /* Kenarlık kaldırma */
+  cursor: pointer; /* İşaretçi */
+  transition: all 0.3s ease; /* Hover animasyonu */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+
+/* Birincil Buton (Mavi) */
+.button-container .btn-primary {
+  background-color: #007bff; /* Mavi arka plan */
+  color: white; /* Beyaz yazı */
+}
+
+.button-container .btn-primary:hover {
+  background-color: #0056b3; /* Daha koyu mavi hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+  transform: scale(1.05); /* Hafif büyüme efekti */
+}
+
+/* İkincil Buton (Gri) */
+.button-container .btn-secondary {
+  background-color: #6c757d; /* Gri arka plan */
+  color: white; /* Beyaz yazı */
+}
+
+.button-container .btn-secondary:hover {
+  background-color: #5a6268; /* Daha koyu gri hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+  transform: scale(1.05); /* Hafif büyüme efekti */
+}
+
+/* Aktif Buton Durumu */
+.button-container button:active {
+  transform: scale(0.95); /* Tıklanırken hafif küçülme efekti */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Daha hafif gölge */
+}

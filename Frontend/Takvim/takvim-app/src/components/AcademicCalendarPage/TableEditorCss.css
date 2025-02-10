@@ -1,0 +1,36 @@
+.custom-table-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-table-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .custom-table-toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .custom-table {
+    background-color: white;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    text-align: center;
+  }
+  
+  .custom-table th {
+    background-color: #007bff;
+    color: white;
+  }
+
+
+  

@@ -1,0 +1,72 @@
+/* Buton grubu için kapsayıcı düzen */
+.fc-toolbar-chunk {
+    display: flex; /* Tüm butonları yatay hizalar */
+    justify-content: center; /* Butonları ortalar */
+    align-items: center; /* Dikey hizalama */
+    gap: 0px; /* Butonlar arasına boşluk ekler */
+  }
+
+  .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
+     margin-left: 0px;
+}
+  
+  /* "Bugün" butonunun özelleştirilmesi */
+  .fc-today-button {
+    background-color: #6c757d; /* Gri arka plan */
+    color: white; /* Beyaz yazı */
+    border: none;
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* "Bugün" butonunun hover efekti */
+  .fc-today-button:hover {
+    background-color: #5a6268; /* Daha koyu gri */
+  }
+  
+  /* Sol (Geri) ve Sağ (İleri) butonları için düzen */
+  .fc-prev-button,
+  .fc-next-button {
+    background-color: #343a40; /* Koyu gri arka plan */
+    color: white; /* Beyaz yazı */
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Sol (Geri) ve Sağ (İleri) butonlarının hover efekti */
+  .fc-prev-button:hover,
+  .fc-next-button:hover {
+    background-color: #23272b; /* Daha koyu gri */
+  }
+  
+
+  /* Gün adlarının stili (Sun, Mon, ... gibi) */
+.fc-col-header-cell-cushion{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #28a745; /* Gün başlıklarının rengi */
+  }
+  
+  /* Takvim hücrelerindeki gün numaraları */
+  .fc-daygrid-day-number {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black; /* Gün numaralarının rengi */
+  }
+  
+  /* Olaylar için genel görünüm */
+  .fc-event {
+    border-radius: 8px; /* Köşelerin yuvarlatılması */
+    font-size: 0.9rem;
+    padding: 5px;
+    text-align: center;
+  }

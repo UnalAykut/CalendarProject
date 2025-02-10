@@ -1,0 +1,36 @@
+/* Header Editor için Ana Konteyner */
+.header-editor-container {
+    text-align: center;
+    /*min-height: 100vh; /* Tam ekran yüksekliği */
+    padding: 20px;
+    background-color: #f8f9fa; /* Hafif gri arka plan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  }
+  
+  /* Input ve Label Stilleri */
+  .header-editor-container .form-label {
+    font-weight: bold;
+    color: #495057; /* Gri yazı rengi */
+  }
+  
+  .header-editor-container .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Kaydet Butonu */
+  .header-editor-container .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .header-editor-container .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .header-editor-container {
+     flex-direction: row !important; 
+}

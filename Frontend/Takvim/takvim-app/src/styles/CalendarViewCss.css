@@ -1,0 +1,148 @@
+/* Takvim Görünümü Ana Konteyner */
+.calendar-view-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa; /* Hafif bir arka plan rengi */
+  border-radius: 10px; /* Hafif köşeler */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+}
+/*Takvim nokta*/
+.fc-daygrid-event-dot {
+  border: calc(var(--fc-daygrid-event-dot-width) / 2) solid black;
+  border-radius: calc(var(--fc-daygrid-event-dot-width) / 2);
+  box-sizing: content-box;
+  height: 0px;
+  margin: 0px 4px;
+  width: 0px;
+}
+  
+  .calendar-view-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .calendar-view-header h1 {
+    font-size: 2.5rem; /* Daha büyük başlık */
+    color: #343a40;
+    font-weight: bold;
+  }
+  
+  .calendar-view-header p {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-top: 5px;
+    font-style: italic;
+  }
+
+  /* FullCalendar Liste Görünümü Ana Yapısı */
+.fc-list {
+  font-family: Arial, sans-serif; /* Yazı tipi */
+  font-size: 14px; /* Yazı boyutu */
+  background-color: #f8f9fa; /* Arka plan rengi */
+  border-radius: 10px; /* Köşeleri yuvarla */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  overflow: hidden; /* Taşan içerik gizlensin */
+}
+
+
+
+
+/* Liste Başlık (Ay veya Hafta Başlığı) */
+.fc-list .fc-list-heading {
+  background-color: #343a40; /* Koyu gri arka plan */
+  color: white; /* Beyaz yazı rengi */
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd; /* Alt çizgi */
+}
+
+/* Günlük Başlıklar (Pazartesi, 2 Ocak gibi) */
+.fc-list-day-text {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.fc-list-day-side-text{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+/*2 Ocak 2025 gibi kısımların düzenlemeleri*/
+.fc-list-day{
+  border-bottom: 2px solid black;
+}
+/*Arka planı*/
+.fc-theme-standard .fc-list-day-cushion{
+  background-color: var(--fc-neutral-bg-color);
+}
+
+
+/*Nokta*/
+.fc .fc-list-event-dot{
+  border: calc(var(--fc-list-event-dot-width) / 2) solid black;
+}
+
+/* Liste Etkinlik (Olaylar) */
+.fc-list .fc-list-event {
+  align-items: first baseline;
+  padding: 20px;
+  border-bottom: 2px solid black; /* Alt çizgi */
+}
+
+/*bacgroundları rengini değiştir*/
+.fc-event.bg-warning:hover {
+  transition: all 0.5s ease; /* Yumuşak bir geçiş efekti */
+  font-weight: bold; /* Yazıyı kalın yap */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Gölge ekle */
+}
+.fc-event.bg-primary:hover {
+  transition: all 0.5s ease; /* Yumuşak bir geçiş efekti */
+  font-weight: bold; /* Yazıyı kalın yap */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Gölge ekle */
+}
+.fc-event.bg-success:hover {
+  transition: all 0.5s ease; /* Yumuşak bir geçiş efekti */
+  font-weight: bold; /* Yazıyı kalın yap */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Gölge ekle */
+}
+.fc-event.bg-danger:hover {
+  transition: all 0.5s ease; /* Yumuşak bir geçiş efekti */
+  font-weight: bold; /* Yazıyı kalın yap */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Gölge ekle */
+}
+.fc-event.bg-info:hover{
+  transition: all 0.5s ease; /* Yumuşak bir geçiş efekti */
+  font-weight: bold; /* Yazıyı kalın yap */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Gölge ekle */
+}
+
+/* CalendarView Butonları için Stil */
+.calendar-view-header button {
+  font-size: 16px; /* Yazı boyutu */
+  padding: 10px 20px; /* İç boşluklar */
+  border-radius: 5px; /* Köşe yuvarlama */
+  border: none; /* Kenarlık kaldırma */
+  cursor: pointer; /* Fare işaretçisi */
+  transition: background-color 0.3s, transform 0.2s; /* Hover animasyonu */
+}
+
+
+/* İkinci Buton (CSV için) */
+.calendar-view-header .btn-secondary {
+  background-color: #007bff; /* Arka plan rengi */
+  color: white; /* Yazı rengi */
+}
+
+.calendar-view-header .btn-secondary:hover {
+  background-color: #5a6268; /* Hover'daki arka plan rengi */
+  transform: scale(1.05); /* Hafif büyüme efekti */
+}
+.calendar-view-header button {
+  width: 20%; /* Buton genişliği */
+  margin-left: 1rem;
+  /* Buton yüksekliği */
+}
+
+

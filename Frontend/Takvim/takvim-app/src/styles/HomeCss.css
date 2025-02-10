@@ -1,0 +1,92 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.home-header h1 {
+  font-size: 2rem;
+  color: #343a40;
+}
+
+.login-button {
+ /* background-color: #007bff;*/
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 20%;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: black;
+}
+
+.search-section {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.calendar-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.calendar-item {
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.calendar-item:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #343a40;
+}
+
+.calendar-item p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.calendar-item .btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  width: 20%;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #6c757d;
+  cursor: pointer;
+}
+
+.calendar-item .btn:hover {
+  background-color: black;
+}

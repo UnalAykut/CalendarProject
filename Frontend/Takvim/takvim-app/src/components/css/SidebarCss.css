@@ -1,0 +1,70 @@
+.sidebar {
+  width: 20%;
+  background-color: #343a40;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-bottom: 1px solid #495057;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link,
+.btn-link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav-link:hover,
+.btn-link:hover {
+  background-color: #495057;
+  color: white;
+}
+
+.nav-link i,
+.btn-link i {
+  font-size: 1.2rem;
+}
+
+.nav .nav-item .nav-link.text-white-50 {
+  color: #a0a0a0;
+}
+
+.nav .nav-item .nav-link.text-white-50:hover {
+  color: white;
+}
+
+.badge {
+  margin-left: 5px;
+}
+
+/* Çıkış Yap Butonu */
+.logout-button button {
+  font-size: 1rem;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-button button:hover {
+  background-color: #495057;
+  color: white;
+}
